@@ -9,7 +9,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 51.250.16.133
+IP 51.250.16.133
 
 Frontend https://avtorian.frontend.nomoredomains.sbs
 
