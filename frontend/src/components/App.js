@@ -8,7 +8,7 @@ import EditAvatarPopup from "./EditAvatarPopup";
 import ImagePopup from "./ImagePopup";
 import AddPlacePopup from "./AddPlacePopup";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
-import { api } from '../utils/Api.js';
+import Api from '../utils/Api.js';
 import { Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 import ProtectedRouteElement from "./ProtectedRoute.js";
 import Register from "./Register.js";
@@ -34,6 +34,14 @@ function App() {
 
   const [email, setEmail] = React.useState("");
   const navigate = useNavigate();
+
+  const api = new Api({
+    baseUrl: "https://api.avtorian.frontend.nomoredomains.sbs",
+    headers: {
+      authorization: `Bearer ${localStorage.getItem("jwt")}`,
+      'Content-Type': 'application/json'
+    }
+  })
 
   React.useEffect(() => {
     handleTokenCheck();

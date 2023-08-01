@@ -1,4 +1,4 @@
-export class Api {
+export default class Api {
   constructor({ baseUrl, headers }) {
     // тело конструктора
     this._Url = baseUrl;
@@ -91,11 +91,3 @@ export class Api {
   }
 
 }
-const api = new Api({
-  baseUrl: "https://api.avtorian.frontend.nomoredomains.sbs",
-  headers: {
-    authorization: `Bearer ${localStorage.getItem("jwt")}`,
-    'Content-Type': 'application/json'
-  }
-})
-export { api }
