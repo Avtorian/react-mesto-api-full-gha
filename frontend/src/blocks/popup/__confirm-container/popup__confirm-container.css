@@ -1,0 +1,14 @@
+.popup__confirm-container{
+  padding: 0;
+  max-width: 84%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .popup__confirm-container {
+    max-width: 64%;
+  }
+}

@@ -1,0 +1,17 @@
+.register__input-text {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #CCCCCC;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 0 0 9px 0;
+  color: #CCCCCC;
+  background-color: #000;
+  margin: 30px 0 0 0;
+}
+.register__input-text:first-of-type{
+  margin: 53px 0 0 0;
+}
+

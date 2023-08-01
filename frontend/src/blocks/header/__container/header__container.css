@@ -1,0 +1,10 @@
+.header__container{
+display: flex;
+flex-direction: row;
+padding-top: 6px;
+}
+@media (max-width: 925px) {
+  .header__container{
+    padding-right:35px;
+  }
+}

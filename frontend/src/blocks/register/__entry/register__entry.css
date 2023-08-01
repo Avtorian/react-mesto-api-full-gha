@@ -1,0 +1,9 @@
+.register__entry{
+  background-color: #000;
+  color: white;
+  border: 0;
+  text-decoration: none;
+}
+.register__entry:hover{
+  opacity: .6;
+}
